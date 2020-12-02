@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <h2>Latest News</h2>
+    <h3>{{mars_data.title}}</h3>
+    <h4>{{mars_data.paragraph}}</h4>
+    </div>
+
+    <div class="col-8">
+        <img src="{{ mars_data.primary_image }}" alt="Craters">
+    </div>
+    <div class="col-4">
+        {{mars_data.table}}
+    </div>
+    <div class="container">
+        <div class="row m-1">
+            <div class="col-sm-6">
+              <div class="thumbnail p-2">
+                <img width="300" height="300" src="{{ mars_data.pics[0] }}" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="thumbnail p-2">
+                  <img width="300" height="300" src="{{ mars_data.pics[1] }}" class="img-thumbnail">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail p-2">
+                  <img width="300" height="300" src="{{ mars_data.pics[2] }}" class="img-thumbnail">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="thumbnail p-2">
+                  <img width="300" height="300" src="{{ mars_data.pics[3] }}" class="img-thumbnail">
+                </div>
+              </div>
+        </div>
+    </div>  
+</body>
+
+</html>
