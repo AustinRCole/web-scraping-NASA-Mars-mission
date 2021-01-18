@@ -1,1 +1,1 @@
-# web-scraping-challenge
+Using Jupyter Notebook, BeautifulSoup, Pandas, and Splinter, scraped NASA Mars mission news and pictures from a few different websites. Then using MongoDB and Flask, created storage and an app that would take and display the scraped data.
